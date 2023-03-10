@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tesztelés</title>
+    <script src="valid.js"></script>
 </head>
 <body>
     <form action="action.php" method="get" name="validTeszt" onsubmit="return validateForm">
         <label for="kNev">Keresztnév:</label>
-        <input type="text" id="kNev" name="kNev"><br><br>
+        <input type="text" id="kNev" name="kNev" required><br><br>
+        <pattern="[A-Z][a-z]+{4}" title="Minimum 4 karakteres!"><br><br>
         <label for="vNev">Vezetéknév:</label>
-        <input type="text" id="vNev" name="vNev"><br><br>
+        <input type="text" id="vNev" name="vNev" required><br><br>
         <label for="jelszo">Jelszó:</label>
         <input type="password" id="jelszo" name="jelszo" required>
         <label for="jelszoK">Jelszó újra:</label>
