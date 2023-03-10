@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesztelés</title>
+</head>
+<body>
+    <form action="action.php" method="get" name="validTeszt" onsubmit="return validateForm">
+        <label for="kNev">Keresztnév:</label>
+        <input type="text" id="kNev" name="kNev"><br><br>
+        <label for="vNev">Vezetéknév:</label>
+        <input type="text" id="vNev" name="vNev"><br><br>
+        <label for="jelszo">Jelszó:</label>
+        <input type="password" id="jelszo" name="jelszo" required>
+        <label for="jelszoK">Jelszó újra:</label>
+        <input type="password" id="jelszoK" name="jelszoK" required>
+      </form>
+</body>
+</html>
