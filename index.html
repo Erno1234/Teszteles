@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tesztelés</title>
     <script src="valid.js"></script>
+    <script src="success.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Regisztráció</h1>
-    <form action="#" method="get" name="validTeszt" onsubmit="return validateForm">
+    <form action="action.php" method="get" name="validTeszt" onsubmit="return validateForm">
         <label for="kNev">Keresztnév:</label>
         <input type="text" id="kNev" name="kNev" required>
         <pattern="^[A-Z][a-z]+{4}+$" title="Minimum 4 karakteres!"><br><br>
